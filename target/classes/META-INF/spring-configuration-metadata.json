@@ -1,0 +1,292 @@
+{
+  "groups": [
+    {
+      "name": "jhipster",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties"
+    },
+    {
+      "name": "jhipster.async",
+      "sourceMethod": "getAsync()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Async"
+    },
+    {
+      "name": "jhipster.cache",
+      "sourceMethod": "getCache()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Cache"
+    },
+    {
+      "name": "jhipster.cache.ehcache",
+      "sourceMethod": "getEhcache()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Cache",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Cache$Ehcache"
+    },
+    {
+      "name": "jhipster.http",
+      "sourceMethod": "getHttp()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Http"
+    },
+    {
+      "name": "jhipster.http.cache",
+      "sourceMethod": "getCache()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Http",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Http$Cache"
+    },
+    {
+      "name": "jhipster.logging",
+      "sourceMethod": "getLogging()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Logging"
+    },
+    {
+      "name": "jhipster.logging.logstash",
+      "sourceMethod": "getLogstash()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Logging",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Logging$Logstash"
+    },
+    {
+      "name": "jhipster.mail",
+      "sourceMethod": "getMail()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Mail"
+    },
+    {
+      "name": "jhipster.metrics",
+      "sourceMethod": "getMetrics()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics"
+    },
+    {
+      "name": "jhipster.metrics.graphite",
+      "sourceMethod": "getGraphite()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Graphite"
+    },
+    {
+      "name": "jhipster.metrics.jmx",
+      "sourceMethod": "getJmx()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Jmx"
+    },
+    {
+      "name": "jhipster.metrics.logs",
+      "sourceMethod": "getLogs()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Logs"
+    },
+    {
+      "name": "jhipster.metrics.spark",
+      "sourceMethod": "getSpark()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Spark"
+    },
+    {
+      "name": "jhipster.ribbon",
+      "sourceMethod": "getRibbon()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Ribbon"
+    },
+    {
+      "name": "jhipster.security",
+      "sourceMethod": "getSecurity()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Security"
+    },
+    {
+      "name": "jhipster.security.remember-me",
+      "sourceMethod": "getRememberMe()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Security",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Security$RememberMe"
+    },
+    {
+      "name": "jhipster.swagger",
+      "sourceMethod": "getSwagger()",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties",
+      "type": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger"
+    }
+  ],
+  "hints": [],
+  "properties": [
+    {
+      "defaultValue": 2,
+      "name": "jhipster.async.core-pool-size",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Async",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": 50,
+      "name": "jhipster.async.max-pool-size",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Async",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": 10000,
+      "name": "jhipster.async.queue-capacity",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Async",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": "16M",
+      "name": "jhipster.cache.ehcache.max-bytes-local-heap",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Cache$Ehcache",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": 3600,
+      "name": "jhipster.cache.time-to-live-seconds",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Cache",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": 1461,
+      "name": "jhipster.http.cache.time-to-live-in-days",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Http$Cache",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": false,
+      "name": "jhipster.logging.logstash.enabled",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Logging$Logstash",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "defaultValue": "localhost",
+      "name": "jhipster.logging.logstash.host",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Logging$Logstash",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": 5000,
+      "name": "jhipster.logging.logstash.port",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Logging$Logstash",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": 512,
+      "name": "jhipster.logging.logstash.queue-size",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Logging$Logstash",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": "orguesaintmaxime@localhost",
+      "name": "jhipster.mail.from",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Mail",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": false,
+      "name": "jhipster.metrics.graphite.enabled",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Graphite",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "defaultValue": "localhost",
+      "name": "jhipster.metrics.graphite.host",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Graphite",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": 2003,
+      "name": "jhipster.metrics.graphite.port",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Graphite",
+      "type": "java.lang.Integer"
+    },
+    {
+      "defaultValue": "orguesaintmaxime",
+      "name": "jhipster.metrics.graphite.prefix",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Graphite",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": true,
+      "name": "jhipster.metrics.jmx.enabled",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Jmx",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "defaultValue": false,
+      "name": "jhipster.metrics.logs.enabled",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Logs",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "defaultValue": false,
+      "name": "jhipster.metrics.spark.enabled",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Spark",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "defaultValue": "localhost",
+      "name": "jhipster.metrics.spark.host",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Spark",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": 9999,
+      "name": "jhipster.metrics.spark.port",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Metrics$Spark",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "jhipster.ribbon.display-on-active-profiles",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Ribbon",
+      "type": "java.lang.String[]"
+    },
+    {
+      "name": "jhipster.security.remember-me.key",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Security$RememberMe",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "jhipster.swagger.contact-email",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "jhipster.swagger.contact-name",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "jhipster.swagger.contact-url",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": "orguesaintmaxime API documentation",
+      "name": "jhipster.swagger.description",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "jhipster.swagger.license",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "jhipster.swagger.license-url",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "jhipster.swagger.terms-of-service-url",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": "orguesaintmaxime API",
+      "name": "jhipster.swagger.title",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": "0.0.1",
+      "name": "jhipster.swagger.version",
+      "sourceType": "com.branci.orguesaintmaxime.config.JHipsterProperties$Swagger",
+      "type": "java.lang.String"
+    }
+  ]
+}
