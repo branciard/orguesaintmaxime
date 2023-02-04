@@ -1,0 +1,56 @@
+#style-switcher h2 a { background: #009f8b none repeat scroll 0 0 }
+
+
+/*START SCROLL TO TOP*/
+.topcontrol {background: #009f8b none repeat scroll 0 0;}
+/*END SCROLL TO TOP*/
+.section-title h2 span { color: #009f8b }
+.section-title div {
+    background: #009f8b  none repeat scroll 0 0;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #009f8b !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #009f8b !important;
+    background-color: transparent;
+}
+
+.menu-top li a:hover { color: #009f8b!important }
+
+.navbar-default.menu-shrink li a:hover { color: #009f8b !important }
+.navbar-default .navbar-toggle .icon-bar { background-color: #009f8b }
+.btn-home-bg-one {background: #009f8b;border: 2px solid #009f8b;}
+.feature-icon-box:hover { background: #009f8b }
+
+.feature-icon-box:hover .icon-box-icon {color: #009f8b;}
+.why-box-icon {
+background: #009f8b none repeat scroll 0 0;
+border: 2px solid #009f8b;}
+.single_why:hover .why-box-icon{
+border: 2px solid #009f8b;
+color:#009f8b;
+}
+
+
+.single_testimonial img {border: 4px solid #009f8b;}
+
+.sin-screenshot a:before {background: #009f8b none repeat scroll 0 0;}
+
+[data-carousel-3d] [data-prev-button]:hover:before, [data-carousel-3d] [data-next-button]:hover:before {background:#009f8b;}
+
+.price {background: #009f8b none repeat scroll 0 0;}
+
+.btn-pricing-bg {background: #009f8b none repeat scroll 0 0;border: 2px solid #009f8b;}
+
+.download_app a {background: #009f8b none repeat scroll 0 0;}
+
+.form-control:hover,
+.form-control:focus {border: 1px solid #009f8b;}
+.btn-contact-bg {background: #009f8b none repeat scroll 0 0;}
+.success {color: #009f8b;}

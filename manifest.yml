@@ -1,0 +1,9 @@
+applications:
+- name: orguesaintmaxime
+  host: orguesaintmaxime
+  path: .
+  domain: eu-gb.mybluemix.net
+  instances: 1
+  memory: 64M
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  stack: cflinuxfs2
