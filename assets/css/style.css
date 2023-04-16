@@ -28,12 +28,13 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 body {
-    background-color: #fff;
+   /* background-color: #fff;*/
     color: #222;
     font-family: "Source Sans Pro",sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+    background-size: cover;
 }
 html,
 body { height: 100% }
@@ -173,7 +174,138 @@ width: 100%;
 * ----------------------------------------------------------------------------------------
 * 02. START BOOTSTRAP NAVIGATION OVERRIDES
 * ----------------------------------------------------------------------------------------
+* From : https://codepen.io/Idered/pen/ExYROd
 */
+
+
+
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Détails';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Réduire';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+  }
+
+.cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+  }
+  
+  .card {
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccad52;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  /*
+  .card:hover {
+    transform: translateY(-7px);
+  }
+  */
+  
+  .card__image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card__image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card__content {
+    padding: 20px;
+  
+  }
+  
+  .card__title {
+   margin-bottom: 20px;
+  }
+  
+  .card__info {
+    display: flex;
+    align-self: end;
+    align-items: center;
+  }
+  
+  .card__price {
+    margin-left: auto;
+    padding: 5px 20px;
+
+    border: 1px solid #ccad52;
+    border-radius: 20px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .card {
+      grid-column-end: span 6;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    main {
+      grid-gap: 20px;
+    }
+    .card {
+      grid-column-end: span 12;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    main {
+      grid-template-columns: 10px repeat(6, 1fr) 10px;
+      grid-gap: 10px;
+    }
+    .cards {
+      grid-column: 2 / span 6;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+    }
+    .card {
+      grid-column-end: span 6;
+    }
+  }
+
+  
 .navbar-default {
     border: none;
     border-radius: 0;
@@ -215,7 +347,6 @@ color: #fff !important;
 font-family: source sans pro,sans-serif;
 font-size: 15px;
 font-weight: 400;
-text-transform: capitalize;
 }
 .menu-top li a:hover { color: #ccad52 !important }
 @media only screen and (max-width:768px) { 
@@ -303,6 +434,17 @@ width: 80%;
 }
 .mbleft15 {
 margin-left:20px;
+}
+.btn-event{
+    background: #ccad52;
+    border: 2px solid #ccad52;
+    border-radius: 0;
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px 30px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    font-family: "Montserrat",sans-serif;
 }
 .btn-home-bg-one {
     background: #ccad52;
