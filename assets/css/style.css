@@ -179,41 +179,29 @@ width: 100%;
 
 
 
-.read-more-state {
-    display: none;
-  }
-  
-  .read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
-  }
-  
-  .read-more-state:checked ~ .read-more-wrap .read-more-target {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
-  }
-  
-  .read-more-state ~ .read-more-trigger:before {
-    content: 'Détails';
-  }
-  
-  .read-more-state:checked ~ .read-more-trigger:before {
-    content: 'Réduire';
-  }
-  
-  .read-more-trigger {
-    cursor: pointer;
+.tooltip {
+    position: relative;
     display: inline-block;
-    padding: 0 .5em;
-    color: #666;
-    font-size: .9em;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: .25em;
-  }
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 .cards {
     grid-column: 2 / span 12;
@@ -228,7 +216,7 @@ width: 100%;
     flex-direction: column;
     border: 1px solid #ccad52;
     border-radius: 0;
-    cursor: pointer;
+   /* cursor: pointer;*/
     transition: all 0.3s ease 0s;
   }
   /*
@@ -268,7 +256,7 @@ width: 100%;
   }
   
   .card__price {
-    margin-left: auto;
+    margin-right: auto;
     padding: 5px 20px;
 
     border: 1px solid #ccad52;
